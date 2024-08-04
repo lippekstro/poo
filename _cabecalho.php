@@ -1,3 +1,7 @@
+<?php
+require_once 'util.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
 
@@ -25,7 +29,10 @@
                             <a class="nav-link" aria-current="page" href="index.php">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Herança</a>
+                            <a class="nav-link" href="heranca.php">Herança</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="interface.php">Interface</a>
                         </li>
                     </ul>
                 </div>

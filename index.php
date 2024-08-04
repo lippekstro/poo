@@ -1,6 +1,5 @@
 <?php
 require_once '_cabecalho.php';
-require_once 'util.php';
 ?>
 
 <section class="m-3">
@@ -11,6 +10,11 @@ require_once 'util.php';
     {
         public $saldo; // propriedade, controle de acesso publico
         //private $saldo;
+
+        public function __construct($saldo_inicial = 0) // definindo um construtor que recebe o saldo inicial do objeto conta criado, esse saldo inicial é opcional
+        {
+            $this->saldo = $saldo_inicial; // atribuindo o valor ao objeto
+        }
 
         public function extrato() // metodo, sao acoes que um objeto sofre ou faz
         {
